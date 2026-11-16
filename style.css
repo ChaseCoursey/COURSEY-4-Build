@@ -1,0 +1,40 @@
+/* GLOBAL STYLES (MOBILE FIRST) */
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #0b1d3a;
+    color: white;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+section {
+    background-color: #163b60;
+    padding: 15px;
+}
+@media (min-width: 600px) {
+    nav ul {
+        flex-direction: row;
+    }
+}
+@media screen and (min-width: 800px) {
+    body {
+        background-color: #061525;
+    }
+    main {
+        flex-direction: row;
+    }
+    section {
+        flex: 1;
+    }
+}
